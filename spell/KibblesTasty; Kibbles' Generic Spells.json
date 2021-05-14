@@ -10,13 +10,13 @@
 					"KibblesTasty"
 				],
 				"convertedBy": [
-					"crabGoblin"
+					"crabGoblin","SasquatchBrah"
 				],
-				"version": "unknown"
+				"version": "1"
 			}
 		],
 		"dateAdded": 1620316744,
-		"dateLastModified": 1620316744
+		"dateLastModified": 1621018940
 	},
 	"siteVersion": "1.127.4",
 	"spell": [
@@ -48,7 +48,7 @@
 				}
 			],
 			"entries": [
-				"A wave of water sweeps out from you. Each creature in a 15-foot cone must make a Strength saving throw. On a failed save, a creature takes {@damage 2d6} bludgeoning damage and is knocked 10 feet away from you. If a creature is knocked into wall, another creature, or fails by 5 or more, it additionally knocked {@condition prone}. On a successful save, the creature takes half as much damage and is knocked back."
+				"A wave of water sweeps out from you. Each creature in a 15-foot cone must make a Strength saving throw. On a failed save, a creature takes {@damage 2d6} bludgeoning damage and is knocked 10 feet away from you. If a creature is knocked into wall, another creature, or fails by 5 or more, it additionally knocked {@condition prone}. On a successful save, the creature takes half as much damage and is not knocked back. If you have a source of water at least 5 cubic feet within 5 feet when you cast the spell, you can displace that water, increasing the range of the spell to a 25 foot cone."
 			],
 			"entriesHigherLevel": [
 				{
@@ -87,6 +87,10 @@
 					{
 						"name": "Druid",
 						"source": "PHB"
+					},
+					{
+						"name": "Swordmage",
+						"source": "F:SM"
 					}
 				]
 			}
@@ -126,7 +130,7 @@
 			],
 			"entries": [
 				"You summon a surging mass of water into existence at a point on the ground within range. The mass of water remains cohesive filling a 5 foot radius, though only rises 3 feet from the ground. The area is difficult terrain for any creature without a swimming speed.",
-				"For the duration of the spell, you can move the wave of water up to 30 feet along a surface in any direction. The first time the wave enters any creature's space during a your turn, they must make a Strength saving throw or take {@damage 1d6} bludgeoning damage and be knocked {@condition prone}. A creature automatically fails the saving throw against this spell if they are {@condition prone}."
+				"For the duration of the spell, as a bonus action you can move the wave of water up to 30 feet along a surface in any direction. The first time the wave enters any creature's space during a your turn, they must make a Strength saving throw or take {@damage 1d6} bludgeoning damage and be knocked {@condition prone}. A creature automatically fails the saving throw against this spell if they are {@condition prone}."
 			],
 			"damageInflict": [
 				"bludgeoning"
@@ -154,6 +158,10 @@
 					{
 						"name": "Occultist",
 						"source": "KT:O"
+					},
+					{
+						"name": "Swordmage",
+						"source": "F:SM"
 					}
 				]
 			}
@@ -353,6 +361,18 @@
 					{
 						"name": "Occultist",
 						"source": "KT:O"
+					},
+					{
+						"name": "Swordmage",
+						"source": "F:SM"
+					},
+					{
+						"name": "Soul Binder",
+						"source": "SoulBinderReduxFragSauce"
+					},
+					{
+						"name": "Soul Binder",
+						"source": "SoulBinderFragSauce"
 					}
 				]
 			}
@@ -609,6 +629,10 @@
 					{
 						"name": "Sorcerer",
 						"source": "PHB"
+					},
+					{
+						"name": "Swordmage",
+						"source": "F:SM"
 					}
 				]
 			}
@@ -679,6 +703,10 @@
 					{
 						"name": "Wizard",
 						"source": "PHB"
+					},
+					{
+						"name": "Swordmage",
+						"source": "F:SM"
 					}
 				]
 			}
@@ -743,6 +771,10 @@
 					{
 						"name": "Sorcerer",
 						"source": "PHB"
+					},
+					{
+						"name": "Swordmage",
+						"source": "F:SM"
 					}
 				]
 			}
@@ -895,7 +927,7 @@
 			],
 			"entries": [
 				"You rend asunder the earth in a 60-foot-long 5-feet-wide line, targeting an area of dirt, sand, or rock at least 10 feet deep.",
-				"Creatures in that line must make a dexterity save. On a failure, a creature falls into a suddenly opened crevice in the ground, falling into it before it snaps shut, crushing them. From the fall and crush, creatures that fail the saving throw take {@damage 6d10} bludgeoning damage. The creature is buried in 10 feet of rubble, and creatures without a borrowing speed require 30 feet of movement to extract themselves from the loose rubble to return to where they failed the saving throw. If they end their turn while buried, they take an additional {@damage 1d10} bludgeoning damage."
+				"Creatures in that line must make a dexterity save. On a failure, a creature falls into a suddenly opened crevice in the ground, falling into it before it snaps shut, crushing them. From the fall and crush, creatures that fail the saving throw take {@damage 6d10} bludgeoning damage. The creature is buried in 10 feet of rubble, and creatures without a burrowing speed require 30 feet of movement to extract themselves from the loose rubble to return to where they failed the saving throw. If they end their turn while buried, they take an additional {@damage 1d10} bludgeoning damage."
 			],
 			"damageInflict": [
 				"bludgeoning"
@@ -1063,6 +1095,10 @@
 					{
 						"name": "Occultist",
 						"source": "KT:O"
+					},
+					{
+						"name": "Swordmage",
+						"source": "F:SM"
 					}
 				]
 			}
@@ -1190,78 +1226,14 @@
 					{
 						"name": "Sorcerer",
 						"source": "PHB"
-					}
-				]
-			}
-		},
-		{
-			"name": "Field of Stars",
-			"source": "KibblesGenericSpells",
-			"level": 5,
-			"school": "V",
-			"time": [
-				{
-					"number": 1,
-					"unit": "action"
-				}
-			],
-			"range": {
-				"type": "radius",
-				"distance": {
-					"type": "feet",
-					"amount": 60
-				}
-			},
-			"components": {
-				"v": true,
-				"s": true
-			},
-			"duration": [
-				{
-					"type": "timed",
-					"duration": {
-						"type": "minute",
-						"amount": 1,
-						"upTo": true
-					},
-					"concentration": true
-				}
-			],
-			"entries": [
-				"You cause 5 star-like motes of light to spring forth at points you can see within range. Each mote of light must be at least 10 feet from any other mote of light. Each mote of light sheds bright light in a 10 foot radius and dim light for an additional 10 feet. If a creature moves within a 5-foot radius of a mote of light or ends their turn within 5 feet of one, the mote explodes in a brilliant flash, dealing {@damage 4d12} radiant damage to all creatures within 5-feet of that mote before fading away.",
-				"For the duration of the spell, while you have any motes of light remaining, as an action you can rearrange the remaining motes, placing them anywhere within range (this movement cannot cause them to detonate)."
-			],
-			"entriesHigherLevel": [
-				{
-					"name": "At Higher Levels",
-					"entries": [
-						"When you cast this spell using a spell slot of 6th level or higher, the range increases by 10 feet and you create an additional star-like mote of light for each slot level about 5th."
-					]
-				}
-			],
-			"damageInflict": [
-				"radiant"
-			],
-			"miscTags": [
-				"SCL"
-			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Wizard",
-						"source": "PHB"
 					},
 					{
-						"name": "Sorcerer",
-						"source": "PHB"
+						"name": "Soul Binder",
+						"source": "SoulBinderReduxFragSauce"
 					},
 					{
-						"name": "Druid",
-						"source": "PHB"
-					},
-					{
-						"name": "Occultist",
-						"source": "KT:O"
+						"name": "Soul Binder",
+						"source": "SoulBinderFragSauce"
 					}
 				]
 			}
@@ -1317,6 +1289,10 @@
 					{
 						"name": "Sorcerer",
 						"source": "PHB"
+					},
+					{
+						"name": "Swordmage",
+						"source": "F:SM"
 					}
 				]
 			}
@@ -1369,6 +1345,10 @@
 					{
 						"name": "Sorcerer",
 						"source": "PHB"
+					},
+					{
+						"name": "Swordmage",
+						"source": "F:SM"
 					}
 				]
 			}
@@ -1406,7 +1386,7 @@
 				}
 			],
 			"entries": [
-				"You create an oversized blade of pure scintillating force energy in your hand. For the duration of the spell, as an action, you can sweep the blade through on target within reach, dealing {@damage 2d12} force damage."
+				"You create an oversized blade of pure scintillating force energy in your hand. For the duration of the spell, as an action, you can sweep the blade through a target within reach, dealing {@damage 2d12} force damage."
 			],
 			"damageInflict": [
 				"force"
@@ -1423,6 +1403,10 @@
 					{
 						"name": "Wizard",
 						"source": "PHB"
+					},
+					{
+						"name": "Swordmage",
+						"source": "F:SM"
 					}
 				]
 			}
@@ -1455,7 +1439,7 @@
 				}
 			],
 			"entries": [
-				"Evokes a burst of brilliant particles of force energy sweeping out in a 30-foot cone originating from you. Creatures in the radius take {@damage 3d4} force damage and the next attack roll made again them before the start of your next turn has advantage."
+				"You evoke a burst of brilliant particles of force energy sweeping out in a 30-foot cone originating from you. Creatures in the radius take {@damage 3d4} force damage and the next attack roll made again them before the start of your next turn has advantage."
 			],
 			"damageInflict": [
 				"force"
@@ -1472,6 +1456,10 @@
 					{
 						"name": "Wizard",
 						"source": "PHB"
+					},
+					{
+						"name": "Swordmage",
+						"source": "F:SM"
 					}
 				]
 			}
@@ -1551,6 +1539,10 @@
 					{
 						"name": "Occultist",
 						"source": "KT:O"
+					},
+					{
+						"name": "Swordmage",
+						"source": "F:SM"
 					}
 				]
 			},
@@ -1637,6 +1629,10 @@
 					{
 						"name": "Occultist",
 						"source": "KT:O"
+					},
+					{
+						"name": "Swordmage",
+						"source": "F:SM"
 					}
 				]
 			}
@@ -1773,6 +1769,62 @@
 			}
 		},
 		{
+			"name": "Electrify",
+			"source": "KibblesGenericSpells",
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a pair of singed gloves"
+			},
+			"entries": [
+				"You channel lightning into your hands. The next time you hit a creature with a melee attack (including a melee spell attack) before the start of your next turn, the target takes {@damage 1d10} lightning damage and must make a Constitution saving throw. On a failed save, the target becomes {@condition stunned} until the start of their next turn.",
+				"The spell ends after dealing damage, or at the start of your next turn, whichever occurs first. For the duration of the spell, you can cast the spell shocking grasp."
+			],
+			"damageInflict": [
+				"lightning"
+			],
+			"conditionInflict": [
+				"stunned"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Occultist",
+						"source": "KT:O"
+					},
+					{
+						"name": "Swordmage",
+						"source": "F:SM"
+					}
+				]
+			}
+		},
+		{
 			"name": "Sky Burst",
 			"source": "KibblesGenericSpells",
 			"level": 5,
@@ -1800,7 +1852,7 @@
 				}
 			],
 			"entries": [
-				"Five bolts of lightning strike five points of your choice that you can see within range. Each creature within 5 feet of the chosen points must make a Dexterity saving throw. A creature takes {@damage 4d12} damage on a failed save, or half as much on a successful one. A creature in the area of more than one lightning burst is affected only once."
+				"Five bolts of lightning strike five points of your choice that you can see within range. Each creature within 5 feet of the chosen points must make a Dexterity saving throw. A creature takes {@damage 4d12} thunder damage on a failed save, or half as much on a successful one. A creature in the area of more than one lightning burst is affected only once."
 			],
 			"entriesHigherLevel": [
 				{
@@ -1930,7 +1982,7 @@
 				}
 			],
 			"entries": [
-				"You emit a sonic blast covering a huge area. Each creature in a 120 foot cone must make a Constitution saving throw. On a failed save, a creature takes {@damage 6d8} thunder damage and is {@condition deafened} if they are within 60 feet of you, or {@damage 3d8} damage if they are further than 60 feet from you. On a successful save, a creature takes half as much damage."
+				"You emit a sonic blast covering a huge area. Each creature in a 120 foot cone must make a Constitution saving throw. On a failed save, a creature takes {@damage 6d8} damage and is {@condition deafened} if they are within 60 feet of you, or {@damage 3d8} damage if they are further than 60 feet from you. On a successful save, a creature takes half as much damage. The spell emits a ringing shriek audible out to 300 feet in the direction cast."
 			],
 			"entriesHigherLevel": [
 				{
@@ -2069,7 +2121,7 @@
 				}
 			],
 			"entries": [
-				"You charge your hand (or similar appendage) with thunder power. Make a melee spell attack against the target. On a hit, the target takes {@damage 3d8} thunder damage, and is knocked 10 feet away from you."
+				"You charge your hand (or similar appendage) with thunder power. Make a melee spell attack against the target. On a hit, there is a thunderous crash audible from up to 300 feet of you and the target takes {@damage 3d8} thunder damage, and is knocked 10 feet away from you."
 			],
 			"entriesHigherLevel": [
 				{
@@ -2101,6 +2153,10 @@
 					{
 						"name": "Sorcerer",
 						"source": "PHB"
+					},
+					{
+						"name": "Swordmage",
+						"source": "F:SM"
 					}
 				]
 			}
@@ -2244,6 +2300,10 @@
 					{
 						"name": "Occultist",
 						"source": "KT:O"
+					},
+					{
+						"name": "Swordmage",
+						"source": "F:SM"
 					}
 				]
 			}
@@ -2309,6 +2369,18 @@
 					{
 						"name": "Occultist",
 						"source": "KT:O"
+					},
+					{
+						"name": "Swordmage",
+						"source": "F:SM"
+					},
+					{
+						"name": "Soul Binder",
+						"source": "SoulBinderReduxFragSauce"
+					},
+					{
+						"name": "Soul Binder",
+						"source": "SoulBinderFragSauce"
 					}
 				]
 			}
@@ -2444,6 +2516,14 @@
 					{
 						"name": "Occultist",
 						"source": "KT:O"
+					},
+					{
+						"name": "Soul Binder",
+						"source": "SoulBinderReduxFragSauce"
+					},
+					{
+						"name": "Soul Binder",
+						"source": "SoulBinderFragSauce"
 					}
 				]
 			}
@@ -2510,6 +2590,10 @@
 					{
 						"name": "Occultist",
 						"source": "KT:O"
+					},
+					{
+						"name": "Swordmage",
+						"source": "F:SM"
 					}
 				]
 			}
@@ -2571,6 +2655,456 @@
 					},
 					{
 						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Occultist",
+						"source": "KT:O"
+					}
+				]
+			}
+		},
+		{
+			"name": "Aero Barrage",
+			"source": "KibblesGenericSpells",
+			"level": 4,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You create four lances of rapidly spinning condensed wind and hurl them at targets within range. You can hurl them at one target or several.",
+				"Make a ranged spell attack for each lance. On a hit, the target takes {@damage 2d8} slashing damage and is knocked 10 feet backwards."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th level or higher, you create one additional lance for each slot level above 4th."
+					]
+				}
+			],
+			"damageInflict": [
+				"slashing"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Swordmage",
+						"source": "F:SM"
+					}
+				]
+			}
+		},
+		{
+			"name": "Gale Bolt",
+			"source": "KibblesGenericSpells",
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"A blast of concentrated wind streaks toward a creature of your choice within range. Make a ranged spell attack against the target. On hit, the target takes {@damage 2d8} bludgeoning damage and is knocked 10 feet away from you if it is Large or smaller."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell lot of 2nd level or higher, the damage increases by {@dice 1d8} for each level above 1st."
+					]
+				}
+			],
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Occultist",
+						"source": "KT:O"
+					},
+					{
+						"name": "Swordmage",
+						"source": "F:SM"
+					}
+				]
+			}
+		},
+		{
+			"name": "Windborne Weapon",
+			"source": "KibblesGenericSpells",
+			"level": 0,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 150
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"Make an attack with a weapon with the ammunition or thrown property as part of the action used to cast this spell, turning it into a ranged spell attack. This attack ignores cover. On hit, it deals {@damage 1d8} damage of the weapon's damage type."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"This spell's damage increases by {@dice 1d8} when you reach 5th level ({@dice 2d8}), 11th level ({@dice 3d8}), and 17th level ({@dice 4d8})."
+					]
+				}
+			],
+			"miscTags": [
+				"SCL"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Swordmage",
+						"source": "F:SM"
+					}
+				]
+			}
+		},
+		{
+			"name": "Hurricane Slash",
+			"source": "KibblesGenericSpells",
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "line",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You condense wind into a razor sharp blast that shreds a 30 foot long 5 feet wide line. Creatures in the area must make a Dexterity saving throw. A creature takes {@damage 3d8} slashing damage on a failed save and half as much on a success."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, you can create an additional line of effect. A creature in the area of more than one slash is affected only once"
+					]
+				}
+			],
+			"damageInflict": [
+				"slashing"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Occultist",
+						"source": "KT:O"
+					},
+					{
+						"name": "Swordmage",
+						"source": "F:SM"
+					}
+				]
+			}
+		},
+		{
+			"name": "Suffocate",
+			"source": "KibblesGenericSpells",
+			"level": 4,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You create a whirling sphere of air around a target that causes them to struggle to breathe. The target must make a Constitution saving throw. On failure, the target loses {@dice 5d8} hit points due to lack of air, has disadvantage on all ability checks, and cannot speak. On success, the target takes half as damage and suffers no other effects. If a target fails a saving throw against this ability on their turn 3 turns in a row, they become {@condition incapacitated} until they pass a save against this spell or do not have to make one since the end of their last turn.",
+				"For the duration, as an action, you can force the creation to make a saving throw against the ability again.",
+				"A creature that does not breath the atmosphere is unaffected by this spell."
+			],
+			"conditionInflict": [
+				"incapacitated"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Occultist",
+						"source": "KT:O"
+					}
+				]
+			}
+		},
+		{
+			"name": "Tornado",
+			"source": "KibblesGenericSpells",
+			"level": 5,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"A whirling tornado erupts filling a 20-foot-radius, 40-foot-high cylinder centered on a point within range.",
+				"Any creature that starts its turn within the tornado must make a Strength saving throw. On a failed save, the creature takes {@damage 4d8} bludgeoning damage and is pushed 10 feet away and 40 feet up. On a successful save, the creature takes half as much damage and isn't pushed.",
+				"As a bonus action, you can move the tornado up to 30 feet in any direction. Any ranged weapon attack against a target within 20 feet of the tornado has disadvantage, and any ranged attack that passes through it automatically misses."
+			],
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"miscTags": [
+				"FMV"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Vortex Blast",
+			"source": "KibblesGenericSpells",
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cone",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You create a sudden violent vortex that blasts outwards in a cone, tossing characters and objects within the area. Creatures take {@damage 2d6} bludgeoning damage and must make a Strength saving throw. On a failed save be knocked 20 feet backward and 40 feet upward."
+			],
+			"entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the damage increases by {@dice 1d6} for each slot level above 3rd."
+					]
+				}
+			],
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Wizard",
 						"source": "PHB"
 					},
 					{
